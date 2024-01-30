@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Me Form</title>
 </head>
 <body background="images/blue.jpg">
-    <p align="right"> <font face="cinzel" size="6"></font><a href="index.html">Logout</a></font></p>
     <p>
         <font face="cinzel" size="4">
 			<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -15,12 +14,25 @@
 			<a href="contact.html">Contact Me</a>
 		</font>
     </p>
-    <br>
-    <p>
-        <font face="Sans-Serif">
-            <b>This page is still in progress. Check back later.</b>
-        </font>
-    </p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="apikey" value="19196983-0073-45ad-a787-beeb00417539">
+
+        <input type="hidden" name="redirect" value="https://estellefruity.github.io/project_website/success-page.html">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Send">
+
+    </form>
+    
   
     <br>
     <br>
