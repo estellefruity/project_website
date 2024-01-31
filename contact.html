@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Me Form</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body background="images/blue.jpg">
-    <p align="right"> <font face="cinzel" size="6"></font><a href="index.html">Logout</a></font></p>
-    <p>
-        <font face="cinzel" size="4">
-			<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="aboutme.html">About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="blog.html">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="contact.html">Contact Me</a>
-		</font>
-    </p>
-    <br>
-    <p>
-        <font face="Sans-Serif">
-            <b>This page is still in progress. Check back later.</b>
-        </font>
-    </p>
-  
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--I used multiple break tags becuase i don't know how else to seperate my body text from my footer section without using CSS-->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <section>
-        <footer align="right">
-            (c) 2024. A project by Temitope Adegbesan.
-        </footer>
-    </section>
     
+        <div class="section-header">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <p>Thank you for your interest in working with me. Please use the form below to send me a message.</p>
+          </div>
+        </div>
+
+        
+          <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST">            
+              <div class="contact-form">
+
+                    <input type="hidden" name="apikey" value="19196983-0073-45ad-a787-beeb00417539">
+
+                    <input type="hidden" name="redirect" value="https://estellefruity.github.io/project_website/success-page.html">
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="please enter your full name">
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <input type="email" required="true" name="" placeholder="Please type in your email">
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="message">Message:</label>
+                        <textarea required="true" name="" placeholder="Type your message here....."></textarea>
+                    </div>
+                
+                    <div class="input-box">
+                        <input type="submit" value="Send" name="">
+                    </div>
+                    
+            </div>
+          </form>
+        </div>
+      </section>
+  
 </body>
 </html>
