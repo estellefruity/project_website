@@ -192,7 +192,7 @@ section {
     width: 100%;
   }
 }
-/* Define the main Navigation block */
+
 .myNav {
   display: block;
   height: 50px;
@@ -200,7 +200,7 @@ section {
   background-color: #333;
 }
 
-/* Remove bullets, margin and padding */
+
 .myNav ul {
   list-style: none;
   padding: 0;
@@ -208,18 +208,17 @@ section {
 }
 
 .myNav li {
-  float: left; /* Or you can use display: inline; */
+  float: left; 
 }
 
-/* Define the block styling for the links */
+
 .myNav li a {
   display: inline-block;
   text-align: center;
   padding: 14px 16px;
 }
 
-/* This is optional, however if you want to display the 
-active link differently apply a background to it */
+
 .myNav li a.active {
   background-color: #3786e1;
 }
